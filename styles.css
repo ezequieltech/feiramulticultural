@@ -133,5 +133,115 @@ footer a:hover {
                              height: auto;
 }
 
+/* 🔹 MOBILE PEQUENO (até 480px) */
+@media (max-width: 480px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  header .nav {
+    justify-content: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #galeria {
+    margin: 10px;
+    padding: 20px;
+    margin-top: 100px;
+
+  }
+
+  .fundo-galeria img {
+    height: 150px;
+  }
+
+  footer {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+/* 🔹 MOBILE / TABLET PEQUENO (481–768px) */
+@media (max-width: 768px) {
+
+  header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  img.float-md-end {
+    float: none !important;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  #galeria {
+    margin: 10px 20px;
+    padding: 20px;
+    margin-top: 100px;
+
+  }
+}
+
+/* 🔹 TABLET MÉDIO / DESKTOP PEQUENO (769–1024px) */
+@media (max-width: 1024px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  .fundo-galeria img {
+    height: 180px;
+  }
+}
+
+/* 🔹 TELAS MUITO GRANDES (acima de 1600px) */
+@media (min-width: 1600px) {
+
+  body {
+    font-size: 22px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .fundo-galeria img {
+    height: 320px;
+  }
+}
+
 
 
