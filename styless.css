@@ -63,15 +63,6 @@ img {
   object-fit: cover;
 }
 
-/* RODAPÉ */
-footer {
-  background: url('img/footer.jpg') no-repeat center center / cover;
-  color: var(--cor-texto-claro);
-  text-align: center;
-  padding: 15px;
-  margin-top: 80px;
-  border-top: 2px solid var(--cor-principal);
-}
 
 /* 📱 MOBILE */
 @media (max-width: 480px) {
@@ -105,4 +96,31 @@ footer {
   h2 {
     font-size: 34px;
   }
+}
+/* 🦶 Footer */
+footer {
+  background: url('img/footer.jpg') no-repeat center center;
+  background-size: cover;
+  color: var(--cor-texto-claro);
+  text-align: center;  /* Centraliza tudo */
+  padding: 8px 10px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-top: 2px solid var(--cor-principal);
+  backdrop-filter: brightness(0.8);
+}
+
+footer p {
+  text-align: center; /* Centralização garantida */
+  color: #f5f5f5;
+}
+
+footer a {
+  color: var(--cor-secundaria);
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--cor-principal);
 }
