@@ -99,7 +99,9 @@ a:hover {
   padding: 30px 50px;
   border-radius: 12px;
 }
-
+img {
+margin-top: 20px;
+}
 .fundo-galeria img {
   height: 250px;
   width: 100%;
