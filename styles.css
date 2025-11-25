@@ -1,12 +1,19 @@
 /* 🎨 Paleta de cores */
 :root {
-  --cor-principal: #e07a5f;      /* Laranja-terra */
-  --cor-secundaria: #f2cc8f;     /* Dourado */
-  --cor-destaque: #81b29a;       /* Verde-musgo */
-  --cor-fundo-escuro: #3d405b;   /* Azul-acinzentado escuro */
-  --cor-texto: #000000;          /* Texto escuro */
-  --cor-texto-claro: #f7f1f1;    /* Texto claro */
-  --cor-fundo-body: #fafafa;     /* Fundo neutro do body */
+  --cor-principal: #e07a5f;
+  /* Laranja-terra */
+  --cor-secundaria: #f2cc8f;
+  /* Dourado */
+  --cor-destaque: #81b29a;
+  /* Verde-musgo */
+  --cor-fundo-escuro: #3d405b;
+  /* Azul-acinzentado escuro */
+  --cor-texto: #000000;
+  /* Texto escuro */
+  --cor-texto-claro: #f7f1f1;
+  /* Texto claro */
+  --cor-fundo-body: #fafafa;
+  /* Fundo neutro do body */
 }
 
 /* 🌍 Estrutura geral */
@@ -52,12 +59,14 @@ header nav .nav-link:hover {
 p {
   font-size: 20px;
   line-height: 1.6;
-  color: var(--cor-texto);   /* Agora em preto */
+  color: var(--cor-texto);
+  /* Agora em preto */
   margin-bottom: 16px;
   text-align: justify;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 700;
 }
 
@@ -65,7 +74,7 @@ h2 {
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
-
+  margin-top: 20px;
 }
 
 /* 🔗 Links */
@@ -82,7 +91,8 @@ a:hover {
 /* 🖼️ Galeria */
 #galeria {
   font-family: "Macondo", cursive;
-  margin: 20px 50px; /* Bordas laterais de 50px */
+  margin: 20px 50px;
+  /* Bordas laterais de 50px */
   background: url('img/footer.jpg');
   background-size: cover;
   color: #f5f5f5;
@@ -103,7 +113,8 @@ footer {
   background: url('img/footer.jpg') no-repeat center center;
   background-size: cover;
   color: var(--cor-texto-claro);
-  text-align: center;  /* Centraliza tudo */
+  text-align: center;
+  /* Centraliza tudo */
   padding: 8px 10px;
   margin-top: 100px;
   margin-bottom: 10px;
@@ -113,7 +124,8 @@ footer {
 }
 
 footer p {
-  text-align: center; /* Centralização garantida */
+  text-align: center;
+  /* Centralização garantida */
   color: #f5f5f5;
 }
 
@@ -125,14 +137,16 @@ footer a {
 footer a:hover {
   color: var(--cor-principal);
 }
+
 .galeria {
-              display: flex;
-              justify-content: space-around; 
-              gap: 10px;                                         
-      }
-      .galeria img {
-                            width: 40%; 
-                             height: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.galeria img {
+  width: 40%;
+  height: auto;
 }
 
 /* 🔹 MOBILE PEQUENO (até 480px) */
@@ -244,6 +258,3 @@ footer a:hover {
     height: 320px;
   }
 }
-
-
-
