@@ -80,7 +80,7 @@ a:hover {
 }
 
 /* 🖼️ Galeria */
-.galeria {
+#galeria {
   font-family: "Macondo", cursive;
   margin: 20px 50px; /* Bordas laterais de 50px */
   background: url('img/footer.jpg');
