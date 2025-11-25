@@ -1,22 +1,21 @@
-/* 🎨 Definição de paleta de cores */
+/* 🎨 Paleta de cores */
 :root {
-    --cor-principal: #e07a5f;      /* Laranja-terra */
-    --cor-secundaria: #f2cc8f;    /* Dourado */
-    --cor-destaque: #81b29a;      /* Verde-musgo */
-    --cor-fundo-escuro: #3d405b;  /* Azul-acinzentado escuro */
-    --cor-texto: #000000;         /* Texto claro */
-    --cor-texto1:#f7f1f1; 
+  --cor-principal: #e07a5f;      /* Laranja-terra */
+  --cor-secundaria: #f2cc8f;     /* Dourado */
+  --cor-destaque: #81b29a;       /* Verde-musgo */
+  --cor-fundo-escuro: #3d405b;   /* Azul-acinzentado escuro */
+  --cor-texto: #000000;          /* Texto escuro */
+  --cor-texto-claro: #f7f1f1;    /* Texto claro */
+  --cor-fundo-body: #fafafa;     /* Fundo neutro do body */
 }
 
 /* 🌍 Estrutura geral */
 body {
-    color: var(--cor-texto);
-    background: url('img/body-bg.png') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    font-family: "Libre Baskerville", serif;
-    font-weight: bold;
-    margin-bottom: 100px;
+  color: var(--cor-texto);
+  background: var(--cor-fundo-body);
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
 }
 
 /* 📌 Cabeçalho */
@@ -26,124 +25,94 @@ header {
   min-height: 80px;
   border-bottom: solid 4px var(--cor-principal);
   padding: 20px 50px;
-
-  display: flex;                /* flexbox para alinhamento */
-  align-items: center;          /* centraliza verticalmente */
-  justify-content: space-between; /* h1 à esquerda, nav à direita */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Macondo", cursive;
   color: var(--cor-destaque);
 }
 
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Navegação */
+header nav .nav-link {
+  color: var(--cor-texto-claro);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header nav .nav-link:hover {
+  color: var(--cor-secundaria);
+}
+
 /* ✍️ Tipografia */
-p1 {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #fdfdfd;
-    text-align: justify;
-}
-
 p {
-    font-size: 20px;
-    line-height: 1.6;
-   color: var(--cor-texto);
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--cor-texto);   /* Agora em preto */
+  margin-bottom: 16px;
+  text-align: justify;
 }
 
-.clearfix {
-    text-align: justify;
+h1, h2 {
+  font-weight: 700;
 }
-
-h1{
-    text-align: left;
-}
-
 
 h2 {
-    color: white;
-    font-weight: 700;
+  color: white;
+  margin-top: 20px;
 }
 
 /* 🔗 Links */
 a {
-    color: var(--cor-principal);
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: var(--cor-principal);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--cor-secundaria);
+  color: var(--cor-secundaria);
 }
 
-/* 🔘 Botões */
-.btn-link {
-    display: inline-block;
-    padding: 8px 16px;
-    border-radius: 6px;
-    background-color: var(--cor-principal);
-    color: #fff;
-    font-weight: 700;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-link:hover {
-    background-color: var(--cor-secundaria);
-    color: #f5f5f5;
-    transform: scale(1.05);
-}
-
-/* 📦 Cards */
-.card {
-    background-color: var(--cor-fundo-escuro);
-    border: 4px solid var(--cor-principal);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 50px;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
+/* 🖼️ Galeria */
 #galeria {
-    font-family: "Macondo", cursive;
-    margin-top: 20px;
-    background:url('img/footer.jpg');
-    background-size: cover;
-    color: #f5f5f5;
-    margin-left: 50px;
-    margin-right: 50px;
-
-
+  font-family: "Macondo", cursive;
+  margin: 20px 50px; /* Bordas laterais de 50px */
+  background: url('img/footer.jpg');
+  background-size: cover;
+  color: #f5f5f5;
+  padding: 30px 50px;
+  border-radius: 12px;
 }
+
 .fundo-galeria img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 20px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
-
-.alto-contraste #galeria {
-    background-color: var(--alto-contraste-fundo);
-}
-.alto-contraste .fundo-galeria {
-    background: none;
-}
-
-/* 🦶 Footer minimalista */
+/* 🦶 Footer */
 footer {
-    background: url('img/footer.jpg') no-repeat center center;
-    background-size: cover;
-    color: var(--cor-texto1);
-    text-align: center;
-    padding: 8px 10px;       /* footer ainda mais baixo */
-    margin-top: 100px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    border-top: 2px solid var(--cor-principal);
-    backdrop-filter: brightness(0.8);
+  background: url('img/footer.jpg') no-repeat center center;
+  background-size: cover;
+  color: var(--cor-texto-claro);
+  text-align: center;  /* Centraliza tudo */
+  padding: 8px 10px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-top: 2px solid var(--cor-principal);
+  backdrop-filter: brightness(0.8);
+}
+
+footer p {
+  text-align: center; /* Centralização garantida */
+  color: #f5f5f5;
 }
 
 footer a {
@@ -154,3 +123,15 @@ footer a {
 footer a:hover {
   color: var(--cor-principal);
 }
+.galeria {
+              display: flex;
+              justify-content: space-around; 
+              gap: 10px;                                         
+      }
+      .galeria img {
+                            width: 40%; 
+                             height: auto;
+}
+
+
+
