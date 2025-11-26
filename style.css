@@ -11,7 +11,7 @@
 /* 🌍 Estrutura geral */
 body {
     color: var(--cor-texto);
-    background: url('img/body-bg.png') no-repeat center center fixed;
+    background: url('img/body.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     font-family: "Libre Baskerville", serif;
