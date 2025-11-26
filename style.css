@@ -108,7 +108,9 @@ a:hover {
 
 #galeria {
     font-family: "Macondo", cursive;
-    margin-top: 200px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    background-color: rgb(0.4);
     background-size: cover;
     color: #f5f5f5;
     margin-left: 50px;
