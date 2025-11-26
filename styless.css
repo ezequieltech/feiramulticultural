@@ -18,6 +18,7 @@ body {
 /* HEADER */
 header {
   background: url('img/header-bg.png') no-repeat center center / cover;
+    font-family: "Macondo", cursive;
   border-bottom: 4px solid var(--cor-principal);
   padding: 20px 50px;
   color: var(--cor-destaque);
