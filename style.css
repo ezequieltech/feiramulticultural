@@ -4,8 +4,8 @@
     --cor-secundaria: #f2cc8f;    /* Dourado */
     --cor-destaque: #81b29a;      /* Verde-musgo */
     --cor-fundo-escuro: #3d405b;  /* Azul-acinzentado escuro */
-    --cor-texto: #000000;         /* Texto claro */
-    --cor-texto1:#f7f1f1; 
+    --cor-texto: #000000;         /* Texto padrão escuro */
+    --cor-texto1:#f7f1f1;         /* Texto claro para footer */
 }
 
 /* 🌍 Estrutura geral */
@@ -27,19 +27,22 @@ header {
   border-bottom: solid 4px var(--cor-principal);
   padding: 20px 50px;
 
-  display: flex;                /* flexbox para alinhamento */
-  align-items: center;          /* centraliza verticalmente */
-  justify-content: space-between; /* h1 à esquerda, nav à direita */
+  display: flex;                
+  align-items: center;          
+  justify-content: space-between; 
   font-family: "Macondo", cursive;
   color: var(--cor-destaque);
 }
 
 /* ✍️ Tipografia */
-p1 {
+/* REMOVIDO: o seletor p1, pois não é uma tag HTML válida. */
+
+/* Novo seletor para o texto de contato no footer */
+.contact-text { 
     font-size: 20px;
     line-height: 1.6;
     color: #fdfdfd;
-    text-align: justify;
+    text-align: center;
 }
 
 p {
@@ -113,9 +116,6 @@ a:hover {
     background:url('img/galeria.png');
     background-size: cover;
     color: #f5f5f5;
-   
-
-
 }
 .fundo-galeria img {
     height: 250px;
@@ -139,7 +139,7 @@ footer {
     background-size: cover;
     color: var(--cor-texto1);
     text-align: center;
-    padding: 8px 10px;       /* footer ainda mais baixo */
+    padding: 8px 10px;       
     margin-top: 100px;
     margin-bottom: 10px;
     font-size: 18px;
