@@ -75,7 +75,7 @@ img {
 }
 
 .fundo-galeria img {
-  height: 100%;
+  height: 85%;
   width: 100%;
   object-fit: cover;
   border-radius: 12px;
